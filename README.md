@@ -1,30 +1,14 @@
 # 📚Bookshelf📚
-## 📖 Description 
-<p>Repositório referente ao Front-end do projeto Bookshelf. O Bookshelf, será um sistema especializado no gerenciamento e consulta de dados relacionados à bibliotecas. Inicialmente o frontend será desenvolvido em React.</p>
-<p><i>O mesmo será utilizado como Trabalho de Conclusão de curso para a ETEC Comendador João Rays.</i></p>
+## 📖 Descrição 
+<p>Repositório referente ao Front-end do projeto Bookshelf. O Bookshelf, é um sistema especializado no gerenciamento e consulta de dados relacionados à bibliotecas. O FrontEnd foi desenvolvido em React sendo utilizado o JavaScript como linguagem.</p>
+<p><i>O mesmo foi utilizado como Trabalho de Conclusão de curso para a ETEC Comendador João Rays.</i></p>
 
 ##
 
 ### 📓 To-do list
 
-- [x] Construir o codigo base do front-end.
-- [ ] In Development...
+![TelasPrincipais](./public/Readme/Telas%20Principais.mp4)
 
-### 🗜️ Functionalities
-
-- In development...
-
-#
-<a href="bookshelf-preview.vercel.app">> Oficial Site</a>
-
-![PlaceHolder](https://sunsetmediawave.files.wordpress.com/2014/10/1-title1.gif)
-
-#
-
-### 💻 Running code
-
-1. In development...
-#
 
 ### 🛠️ Technologies
 
