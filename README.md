@@ -1,5 +1,3 @@
-
-https://github.com/KauanMP/bookshelf-frontend/assets/104518438/7b920ecb-14f0-4fca-9fcd-dfb82bb41e3a
 # 📚Bookshelf📚
 ## 📖 Descrição
 <p>Repositório referente ao Front-end do projeto Bookshelf. O Bookshelf, é um sistema especializado no gerenciamento e consulta de dados relacionados à bibliotecas. O FrontEnd foi desenvolvido em React sendo utilizado o JavaScript como linguagem.</p>
@@ -9,9 +7,13 @@ https://github.com/KauanMP/bookshelf-frontend/assets/104518438/7b920ecb-14f0-4fc
 
 ### 📓 Telas Principais
 
-![TelasPrincipais](URL)
+![TelasPrincipais](https://github.com/KauanMP/bookshelf-frontend/assets/104518438/dcf39e0e-5756-44f2-bc2a-dfd98a2eedd5)
 
 #
+
+
+
+
 
 
 
