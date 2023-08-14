@@ -287,7 +287,7 @@ function AddCopy() {
                           variant="outlined"
                           fullWidth
                           readOnly
-                          value={selectedBook?.capeType || ""}
+                          value={selectedBook?.typeCape || ""}
                         />
                       </Box>
                       <Box gridRow={4} sx={onlyXs && { mb: 3 }}>

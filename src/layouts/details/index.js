@@ -29,6 +29,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import MDButton from "components/MDButton";
+import { usePermission } from "hooks/usePermission";
 import MDBox from "../../components/MDBox";
 import MDTypography from "../../components/MDTypography";
 
@@ -37,21 +38,24 @@ import Footer from "../../examples/Footer";
 import data from "./data";
 import { useLibrary } from "../../hooks/useLibrary";
 import { setCurrentBook, useMaterialUIController } from "../../context";
+import { PERM_BOOKSHELF_LIB_BOOKS_COPY_ADD } from "../../helpers/auth/Permisions";
 
 function Details() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("lg"));
   // eslint-disable-next-line no-unused-vars
-  const [bookInfo, setBookInfo] = useState(null);
-  const { columns, rows } = data();
   const navigate = useNavigate();
+  const useLibraries = useLibrary();
+  const { hasPermission } = usePermission();
+  // const [bookInfo, setBookInfo] = useState(null);
   const [showSuccessAlert, setShowSuccessAlert] = useState(false);
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
-  const useLibraries = useLibrary();
+  const [book, setBook] = useState(null);
+  const [doNotHavePermissionToRemoveCopy, setDoNotHavePermissionToRemoveCopy] = useState(false);
+  const { columns, rows } = data();
   const { libId } = useParams();
   const [controller, dispatch] = useMaterialUIController();
   const { userLogged, library } = controller;
-  const [book, setBook] = useState(null);
 
   useEffect(() => {
     if (userLogged) {
@@ -80,6 +84,16 @@ function Details() {
         .catch(() => {});
     }
   };
+
+  useEffect(() => {
+    if (userLogged) {
+      const canRemoveCopy = hasPermission(PERM_BOOKSHELF_LIB_BOOKS_COPY_ADD, library);
+
+      if (!canRemoveCopy) {
+        setDoNotHavePermissionToRemoveCopy(true);
+      }
+    }
+  }, [userLogged]);
 
   const handleDeleteConfirm = () => {
     handleRemoveCopy();
@@ -141,9 +155,11 @@ function Details() {
                     </MDTypography>
                   </Grid>
                   <Grid item>
-                    <MDButton onClick={() => setShowDeleteDialog(true)} color="error">
-                      Remover Cópia
-                    </MDButton>
+                    {!doNotHavePermissionToRemoveCopy && (
+                      <MDButton onClick={() => setShowDeleteDialog(true)} color="error">
+                        Remover Cópia
+                      </MDButton>
+                    )}
 
                     <Dialog
                       open={showDeleteDialog}
@@ -381,7 +397,7 @@ function Details() {
                             variant="h6"
                             sx={{ color: "#cecece", fontWeight: "400", fontSize: "0.7em" }}
                           >
-                            {book.typeCape}
+                            {book.capeType}
                           </MDTypography>
                         </Box>
                         <Box
