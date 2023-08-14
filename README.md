@@ -7,12 +7,9 @@
 
 ### 📓 Telas Principais
 
-![TelasPrincipais](https://github.com/KauanMP/bookshelf-frontend/assets/104518438/dcf39e0e-5756-44f2-bc2a-dfd98a2eedd5)
+![TelasPrincipais](./public/Readme/Telas%20Principais.mp4)
 
 #
-
-
-
 
 
 
