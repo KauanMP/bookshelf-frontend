@@ -54,6 +54,36 @@ A dashboard de usuário tem limitações comparada com a administrativa, contend
 
 Ná pagina de detalhes dos livros está mais completo as informações do livro.
 
+
+
+### Dashboard Administrativa
+
+
+![Dashboard Administrativa](https://github.com/KauanMP/bookshelf-frontend/assets/104518438/7b859583-d92c-484c-9c74-d1c0eb2db2d7)
+
+
+A dashboard administrativa possue mais informações e funcionalidades que a de usuários
+
+
+![Acervo Administrativo](https://github.com/KauanMP/bookshelf-frontend/assets/104518438/ed005957-9555-4cf0-a873-996114b04dad)
+
+
+A pagina de listagem de livros administrativa possibilita o funcionário de adicionar novos livros novas copias e filtrar os livros pelas suas informações ajudando o funcionário a fazer pesquisas com menos tempo.
+
+
+
+![Pagina de adicionar livros](https://github.com/KauanMP/bookshelf-frontend/assets/104518438/3199a77f-b9f9-4918-a54e-023df7e2537b)
+
+
+Nesta pagina o funcionário só precisa inserir os dados do livro que ele já é cadastrado na biblioteca, mas ele não vai poder ser pedido em emprestimos pois precisa ter mais de uma cópia.
+
+
+![Pagina de adicionar copias](https://github.com/KauanMP/bookshelf-frontend/assets/104518438/49d6727c-a1cb-4bac-b48b-4d69478d34ce)
+
+
+Aqui o funcionário so precisa escolher o nome do livro e a maior parte das informações vão ser preenchidas, só vai ser necessário adicionar um tombo que é o codigo do livro.
+
+
 ### 🛠️ Technologies
 
 It was used during development:
